@@ -11,18 +11,21 @@
 <body>
     {{> header}}
 
-    <div class="content">
-        {{> visits}}
-        {{> countOfComments}}
-        {{> visitsOfCompetitors}}
-    </div>
+    <div class="inner">
+        <div class="content">
+            {{> visits}}
+            {{> countOfComments}}
+            {{> visitsOfCompetitors}}
+        </div>
 
-    <aside class="sidebar">
-        {{> statisticOfVisits}}
-        {{> freeOpportunity}}
-        {{> perfectReputation}}
-        {{> representation}}
-    </aside>
+        <aside class="sidebar">
+            {{> statisticOfVisits}}
+            {{> freeOpportunity}}
+            {{> monopolist}}
+            {{> perfectReputation}}
+            {{> representation}}
+        </aside>
+    </div>
 
     {{> footer}}
 </body>

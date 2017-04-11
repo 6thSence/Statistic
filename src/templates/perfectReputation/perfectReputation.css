@@ -1,0 +1,41 @@
+.perfect-reputation {
+    box-sizing: border-box;
+    margin: 0 0 30px;
+    padding: 0 0 25px;
+    background: #fff;
+    box-shadow: 0 0 20px -10px;
+}
+
+    .perfect-reputation__title {
+        margin: 0;
+        padding: 25px 35px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #444 #DFDFDF;
+        font: 25px robotoMedium, Helvetica, Arial, sans-serif;
+    }
+
+    .perfect-reputation__inner {
+        padding: 30px 35px;
+    }
+
+        .perfect-reputation__text {
+            margin: 0 0 15px;
+            font: 16px robotoRegular, Helvetica, Arial, sans-serif;
+        }
+
+        .perfect-reputation__price {
+            font: 18px robotoMedium, Helvetica, Arial, sans-serif;
+        }
+
+        .perfect-reputation__comment {
+            font: 14px robotoMedium, Helvetica, Arial, sans-serif;
+        }
+
+@media (max-width: 720px) {
+    .perfect-reputation {
+        margin: 0;
+        box-shadow: none;
+        border-bottom: solid 1px rgba(184, 184, 184, .3);
+    }
+}

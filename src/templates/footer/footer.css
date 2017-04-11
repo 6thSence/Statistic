@@ -5,26 +5,29 @@
 
     .footer__info {
         margin: 0 0 22px;
-        font: 18px Roboto, Helvetica, Arial, sans-serif;
+        font: 18px RobotoMedium, Helvetica, Arial, sans-serif;
     }
 
     .footer__inner {
+        margin: 0 0 50px;
+        padding: 0 0 30px;
         background: #fff;
         box-shadow: 0 0 20px -10px;
     }
 
         .capabilities__list {
+            display: flex;
             margin: 0;
             padding: 0;
             list-style: none;
-            display: flex;
             font: 22px Roboto, Helvetica, Arial, sans-serif;
         }
 
             .capabilities__item {
+                box-sizing: border-box;
                 padding: 30px;
-                flex: 1;
                 color: #fff #F69112;
+                flex: 1;
             }
 
             .capabilities__item:nth-child(even) {
@@ -34,3 +37,55 @@
                 .capabilities__item-text {
                     font-size: 16px;
                 }
+
+        .logos {
+            margin: 0 0 25px;
+            display: flex;
+        }
+        
+            .logos__google {
+                min-height: 100px;
+                background: inline('./assets/Bitmap.png') center no-repeat;
+                flex: 1;
+            }
+
+            .logos__yandex {
+                min-height: 100px;
+                background: inline('./assets/Yandex.png') center no-repeat;
+                flex: 1;
+            }
+
+            .logos__text {
+                flex: 2;
+            }
+
+        .footer__copyright {
+            margin: 0;
+            padding: 0 0 5px;
+            color: #A4A4A4;
+            text-align: center;
+            font: 16px/20px robotoRegular, Helvetica, Arial, sans-serif;
+        }
+
+@media (max-width: 720px) {
+    .footer__inner {
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .capabilities__list {
+        flex-direction: column;
+    }
+
+        .capabilities__item {
+            width: 100%;
+        }
+
+    .logos {
+        flex-direction: column;
+    }
+
+    .logos__text {
+        padding: 0 35px;
+    }
+}
