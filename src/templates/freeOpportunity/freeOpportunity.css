@@ -1,7 +1,7 @@
 .free-opportunity {
     box-sizing: border-box;
     margin: 0 0 30px;
-    padding: 25px 35px;
+    padding: 25px 35px 30px;
     background: #FDF1E1;
     box-shadow: 0 0 20px -10px;
 }
@@ -13,7 +13,7 @@
 
     .free-opportunity__text {
         color: #666;
-        font: 15px robotoMedium, Helvetica, Arial, sans-seirf;
+        font: 15px robotoRegular, Helvetica, Arial, sans-seirf;
     }
 
     .free-opportunity__list {
@@ -26,9 +26,13 @@
             padding: 0 45px 0 70px;
         }
 
-            .free-opportunity__inner {
-                box-sizing: border-box;
-                padding: 30px 35px 10px;
+            .free-opportunity__item-text {
+                font: 16px robotoMediun, Helvetica, Arial, sans-sesrif;
+            }
+
+            .free-opportunity__item-link {
+                color: #008CFF;
+                font: 16px robotoRegular, Helvetica, Arial, sans-serif;
             }
 
 @media (max-width: 720px) {
