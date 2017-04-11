@@ -45,18 +45,21 @@
         
             .logos__google {
                 min-height: 100px;
-                background: inline('./assets/Bitmap.png') center no-repeat;
+                background: inline('./assets/LogoGoogle.svg') center no-repeat;
                 flex: 1;
             }
 
             .logos__yandex {
                 min-height: 100px;
-                background: inline('./assets/Yandex.png') center no-repeat;
+                background: inline('./assets/LogoYandex.svg') center no-repeat;
                 flex: 1;
             }
 
             .logos__text {
                 flex: 2;
+                font: 16px robotoRegulat, Helvetica, Arial, sans-serif;
+                padding: 0 10px 0 0;
+                box-sizing: border-box;
             }
 
         .footer__copyright {
