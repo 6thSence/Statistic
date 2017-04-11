@@ -1,0 +1,36 @@
+.footer {
+    margin: auto;
+    max-width: 1280px;
+}
+
+    .footer__info {
+        margin: 0 0 22px;
+        font: 18px Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .footer__inner {
+        background: #fff;
+        box-shadow: 0 0 20px -10px;
+    }
+
+        .capabilities__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            font: 22px Roboto, Helvetica, Arial, sans-serif;
+        }
+
+            .capabilities__item {
+                padding: 30px;
+                flex: 1;
+                color: #fff #F69112;
+            }
+
+            .capabilities__item:nth-child(even) {
+                background: #E58001;
+            }
+
+                .capabilities__item-text {
+                    font-size: 16px;
+                }
