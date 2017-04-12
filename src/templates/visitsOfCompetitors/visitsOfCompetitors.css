@@ -142,6 +142,10 @@
             font: 16px robotoRegular, Helvetica, Arial, sans-serif;
         }
 
+        .visits-competitiors__row-item-link._maintbtn {
+            margin: 0 0 30px;
+        }
+
 @media (max-width: 720px) {
     .visits-competitors {
         margin: 0;
@@ -151,6 +155,19 @@
     .visits-competitiors__header {
         display: none;
     }
+
+    .visits-competitors__nav {
+        display: flex;
+    }
+
+        .visits-competitors__item {
+            flex: 1;
+
+            &:last-child {
+                padding: 30px 15px 15px 35px;
+            }
+        }
+
 
     .visits-competitiors__row {
         padding: 15px 5px;
@@ -164,4 +181,8 @@
                 display: none;
             }
         }
+
+    .visits-competitiors__row-item-link._maintbtn {
+        margin: 0 35px 30px;
+    }
 }
