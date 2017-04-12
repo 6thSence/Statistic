@@ -58,6 +58,25 @@
             }
         }
 
+    .visits-competitiors__ips {
+        &  .visits-competitiors__header-item {
+            &:last-child {
+                flex: 1;
+            }
+
+            &:first-child {
+                max-width: 300px;
+            }
+        }
+
+        & .visits-competitiors__row-item {
+
+            &:first-child {
+                max-width: 300px;
+            }
+        }
+    }
+
     .visits-competitiors__row {
         padding: 15px 35px;
         box-sizing: border-box;
@@ -112,7 +131,16 @@
             }
         }
 
+    .visits-competitiors__ips {
+        padding: 30px 0 0;
+    }
 
+        .visits-competitiors__ips-text {
+            display: inline-block;
+            padding: 0 0 0 35px;
+            margin: 0 60px 35px 0;
+            font: 16px robotoRegular, Helvetica, Arial, sans-serif;
+        }
 
 @media (max-width: 720px) {
     .visits-competitors {

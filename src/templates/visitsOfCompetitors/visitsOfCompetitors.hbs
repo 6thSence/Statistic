@@ -1,9 +1,10 @@
 <div class="visits-competitors">
     <div class="visits-competitors__nav">
-        <a class="visits-competitors__item _active" id="visits">Посещаемость конкурентов</a><!--
-        --><a class="visits-competitors__item" id="ips">IP посетителей</a>
+        <a class="visits-competitors__item {{#if ip}}_active{{/if}}" id="visits">Посещаемость конкурентов</a><!--
+        --><a class="visits-competitors__item {{#unless ip}}_active{{/unless}}" id="ips">IP посетителей</a>
     </div>
 
+    {{#if ip}}
     <div class="visits-competitiors__visits">
         <div class="visits-competitiors__header">
             <div class="visits-competitiors__header-item _help">Название компании</div>
@@ -98,5 +99,62 @@
             </div>
         </div>
     </div>
-    <div class="visits-competitiors__ips"></div>
+    {{/if}}
+
+    {{#unless ip}}
+    <div class="visits-competitiors__ips">
+        <span class="visits-competitiors__ips-text">Таблица  содержит недавние IP</span>
+        <a href="#" class="visits-competitiors__row-item-link">Заказать ремаркетинг</a>
+
+        <div class="visits-competitiors__visits">
+            <div class="visits-competitiors__header">
+                <div class="visits-competitiors__header-item _help">Откуда</div>
+                <div class="visits-competitiors__header-item _help">IP</div>
+                <div class="visits-competitiors__header-item">Дата, время, захода</div>
+            </div>
+            <div class="visits-competitiors__table">
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru (из рубрики)</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru (из рубрики)</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru (из рубрики)</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru (из рубрики)</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+                <div class="visits-competitiors__row">
+                    <div class="visits-competitiors__row-item">spr.ru</div>
+                    <div class="visits-competitiors__row-item">1.0.164.29</div>
+                    <div class="visits-competitiors__row-item">2017-04-06 08:12:26</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/unless}}
 </div>
