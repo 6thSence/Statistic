@@ -57,15 +57,28 @@
     
     .visits__item:nth-child(even) {
         background: #F5F5F5;
+
+        & .visits__item-count {
+            flex: 2;
+        }
     }
 
     .visits__item-text {
+        min-width: 360px;
+        padding: 0 20px 0 0;
         font: 16px robotoRegular, Helvetica, Arial, sans-serif;
-        padding: 0 20px 0 0 ;
-        background: inline('./assets/help-circle-outline.svg') right center/15px no-repeat;
+    }
+
+    .visits__item-text:after {
+        content: '';
+        display: inline-block;
+        size: 15px;
+        margin: 0 0 0 5px;
+        background: inline('./assets/help-circle-outline.svg') right center/contain no-repeat ;
     }
 
     .visits__item-count {
+        flex: 1;
         font: 15px robotoRegular, Helvetica, Arial, sans-serif;
     }
 
@@ -80,10 +93,9 @@
         transition: opacity .3s;
 
         &:hover {
-            cursor: pointer;
-             opacity: .6;
+            opacity: .6;
+             cursor: pointer;
         }
-
     }
 
 @media (max-width: 720px) {
