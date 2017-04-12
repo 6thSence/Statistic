@@ -157,4 +157,19 @@
         border-bottom: solid 1px rgba(184, 184, 184, .3);
         box-shadow: none;
     }
+
+    .countOfComments__counts,
+    .countOfComments__footer {
+        flex-direction: column;
+    }
+
+        .countOfComments__wrap-more,
+        .countOfComments__footer-list {
+            margin: 0 0 30px;
+        }
+
+        .countOfComments__footer-left {
+            border-bottom: solid 2px #EFEFEF;
+            margin: 0 0 20px;
+        }
 }

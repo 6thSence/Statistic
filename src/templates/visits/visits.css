@@ -78,6 +78,7 @@
     }
 
     .visits__item-count {
+        margin: 0 10px 0 0;
         flex: 1;
         font: 15px robotoRegular, Helvetica, Arial, sans-serif;
     }
@@ -108,5 +109,9 @@
         .visits__header {
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        .visits__item-text {
+            min-width: 0;
         }
 }
