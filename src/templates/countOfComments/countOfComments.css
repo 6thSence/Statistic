@@ -106,6 +106,7 @@
                     }
 
                     .countOfComments__footer-link {
+                        margin: 0 20px 0 0;
                         color: #008CFF;
                         font: 16px robotoRegular, Helvetica, Arial, sans-serif;
                         transform: translateX(110%);
@@ -118,6 +119,7 @@
 
                         &._reply {
                             position: absolute  * 0 0 *;
+                            margin: 0;
                         }
                     }
 
@@ -128,6 +130,7 @@
         }
 
             .countOfComments__footer-right-text {
+                margin: 0 20px 0 0;
                 color: #616161;
                 font: 15px robotoRegular, Helvetica, Arial, sans-serif;
             }
