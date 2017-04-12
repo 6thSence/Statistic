@@ -1,12 +1,13 @@
 .visits {
     margin: 0 0 35px;
-    padding: 30px 35px 0;
+    padding: 30px 0 0;
     background: #fff;
     box-shadow: 0 0 20px -10px;
 }
 
     .visits__header {
         display: flex;
+        padding: 0 35px;
         justify-content: space-between;
         align-items: center;
     }
@@ -17,13 +18,13 @@
         }
 
         .visits__header-button {
-            text-decoration: none;
-            color: #000;
-            margin: 0 15px 10px 0;
             display: inline-block;
+            margin: 0 15px 10px 0;
             padding: 10px 15px;
-            box-shadow: 0 0 4px -1px rgba(0, 0, 0, .4);
             border-radius: 2px;
+            box-shadow: 0 0 4px -1px rgba(0, 0, 0, .4);
+            color: #000;
+            text-decoration: none;
             font: 16px robotoReguar, Helvetica, Arial, sans-serig;
             transition: box-shadow .3s;
 
@@ -40,11 +41,56 @@
             margin: 0;
         }
 
+    .visits__graph {
+        margin-left: -20px;
+        padding: 35px 0 0;
+        border-bottom: solid 2px #EFEFEF;
+    }
+
+    .visits__item {
+        display: flex;
+        padding: 0 35px;
+        min-height: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .visits__item:nth-child(even) {
+        background: #F5F5F5;
+    }
+
+    .visits__item-text {
+        font: 16px robotoRegular, Helvetica, Arial, sans-serif;
+        padding: 0 20px 0 0 ;
+        background: inline('./assets/help-circle-outline.svg') right center/15px no-repeat;
+    }
+
+    .visits__item-count {
+        font: 15px robotoRegular, Helvetica, Arial, sans-serif;
+    }
+
+    .visits__item-button {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 2px;
+        color: #fff #39C31D;
+        text-decoration: none;
+        font: 16px robotoRegular, Helvetica, Arial, sans-serif;
+        opacity: 1;
+        transition: opacity .3s;
+
+        &:hover {
+            cursor: pointer;
+             opacity: .6;
+        }
+
+    }
+
 @media (max-width: 720px) {
     .visits {
         margin: 0;
-        box-shadow: none;
         border-bottom: solid 1px rgba(184, 184, 184, .3);
+        box-shadow: none;
     }
 
         .visits__header {
