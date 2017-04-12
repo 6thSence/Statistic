@@ -4,6 +4,9 @@
 }
 
     .footer__info {
+        display: inline-block;
+        padding: 0 20px 0 0;
+        background: inline('./assets/help-circle-outline.svg') right center/15px no-repeat;
         margin: 0 0 22px;
         font: 18px RobotoMedium, Helvetica, Arial, sans-serif;
     }

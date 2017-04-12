@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/bundle.css">
+    <link rel="stylesheet" type="text/css" href="vendor/nvd3/build/nv.d3.css" />
     <title>Template</title>
 </head>
 
-<body>
+<body id="dashboards-analytics" data-layout="fixed-navbar-1" data-sidebar="primary" data-navbar="primary" data-controller="dashboards" data-view="analytics">
     {{> header}}
 
     <div class="inner">
         <div class="content">
             {{> visits}}
-            {{> countOfComments}}
-            {{> visitsOfCompetitors}}
+            <!--{{> countOfComments}}-->
+            <!--{{> visitsOfCompetitors}}-->
         </div>
 
         <aside class="sidebar">
@@ -28,5 +29,24 @@
     </div>
 
     {{> footer}}
+
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/lodash/dist/lodash.min.js"></script>
+    <script src="vendor/tether/dist/js/tether.js"></script>
+    <script src="vendor/jquery-storage-api/jquery.storageapi.min.js"></script>
+    <script src="vendor/moment/moment.js"></script>
+    <script src="vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="vendor/d3/d3.js"></script>
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+    <script src="vendor/mousetrap/mousetrap.js"></script>
+    <script src="vendor/bootstrap-material-design/dist/bootstrap-material-design.iife.js"></script>
+    <script src="vendor/nvd3/build/nv.d3.js"></script>
+    <script src="vendor/fakeLoader/fakeLoader.min.js"></script>
+
+    <script src="vendor/scripts/functions.js"></script>
+    <script src="vendor/scripts/colors.js"></script>
+    <script src="vendor/scripts/app.js"></script>
+    <script src="vendor/scripts/dashboards/geographic.js"></script>
+    <script src="vendor/scripts/dashboards/analytics.js"></script>
 </body>
 </html>

@@ -27,7 +27,8 @@ const paths = {
     buildDir: './static',
     handlebars: ['./src/**/*.hbs'],
     styles: ['./src/**/*.css'],
-    scripts: ['./src/**/*.js'],
+    scripts: ['./src/**/*.js!vendor'],
+    vendor: ['./src/vendor/**/*.*'],
     scriptsLint: ['**/*.js', '!node_modules/**/*', '!static/**/*'],
     templates: 'src/templates/**/*.hbs',
     assets: 'src/**/*.png',
@@ -115,6 +116,9 @@ gulp.task('scripts', () => {
         .pipe(concat('js/script.js'))
         .pipe(gulpif(config.env === 'production', uglify()))
         .pipe(gulp.dest(paths.buildDir));
+
+    gulp.src(paths.vendor)
+        .pipe(gulp.dest(`${paths.buildDir}/vendor/`));
 });
 
 gulp.task('lint', ['eslint', 'stylelint']);
